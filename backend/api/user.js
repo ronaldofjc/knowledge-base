@@ -1,6 +1,6 @@
-module.exports = app => {
+module.exports = () => {
   const save = (req, res) => {
-    res.send("user save");
+    res.send('user save');
   };
 
   return { save };
