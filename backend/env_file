@@ -1,3 +1,10 @@
 module.exports = {
-    authSecret: ''
+    authSecret: '',
+    dbPostgres: {
+      host: '',
+      port: ,
+      database: '',
+      user: '',
+    },
+    dbMongo: ''
 }

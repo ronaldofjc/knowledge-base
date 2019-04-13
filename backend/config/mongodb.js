@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
+const { dbMongo } = require("../.env");
+
 mongoose
-  .connect("mongodb://localhost:27017/knowledge_stats", {
+  .connect(dbMongo, {
     useNewUrlParser: true
   })
   .catch(e => {
