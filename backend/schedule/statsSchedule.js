@@ -4,6 +4,7 @@ module.exports = app => {
   schedule.scheduleJob("*/1 * * * *", async function() {
     const usersCount = await app
       .db("users")
+      .whereNull("deletedAt")
       .count("id")
       .first();
     const categoriesCount = await app
