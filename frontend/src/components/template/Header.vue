@@ -3,7 +3,9 @@
     <a class="toogle" @click="toggleMenu" v-if="!hideToogle">
       <i class="fa fa-lg" :class="icon"></i>
     </a>
-    <h1 class="title">{{ title }}</h1>
+    <h1 class="title">
+      <router-link to="/">{{ title }}</router-link>
+    </h1>
     <UserDropdown v-if="!hideUserDropdown"/>
   </header>
 </template>
@@ -53,6 +55,11 @@ export default {
 }
 
 .title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.title a:hover {
   color: #fff;
   text-decoration: none;
 }
