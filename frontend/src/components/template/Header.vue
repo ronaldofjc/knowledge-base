@@ -1,10 +1,27 @@
 <template>
-  <header class="header"></header>
+  <header class="header">
+    <a class="toogle" @click="toogleMenu" v-if="!hideToogle">
+      <i class="fa fa-lg" :class="icon"></i>
+    </a>
+    <h1 class="title">{{ title }}</h1>
+  </header>
 </template>
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  props: {
+    title: String,
+    hideToogle: Boolean
+  },
+  computed: {
+    icon() {
+      return "fa-angle-left";
+    }
+  },
+  methods: {
+    toogleMenu() {}
+  }
 };
 </script>
 
@@ -16,5 +33,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 100;
+  flex-grow: 1;
+  text-align: center;
 }
 </style>

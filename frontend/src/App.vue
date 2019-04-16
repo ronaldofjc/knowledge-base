@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header title="Atlantis - Base de Conhecimento" :hideToogle="false"/>
     <Menu/>
     <Content/>
     <Footer/>
@@ -40,5 +40,26 @@ body {
     "header header"
     "menu content"
     "menu footer";
+}
+
+.title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header.header > a.toogle {
+  width: 60px;
+  height: 100%;
+  color: #fff;
+  justify-self: flex-start;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.header > a.toogle:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 </style>
