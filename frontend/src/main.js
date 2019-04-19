@@ -12,7 +12,7 @@ Vue.config.productionTip = false;
 
 // TEMPORARIO
 require("axios").defaults.headers.common["Authorization"] =
-  "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6IlJvbmFsZG8gRmVpdG9zYSIsImVtYWlsIjoicm9uYWxkb2ZqY0Bob3RtYWlsLmNvbSIsImFkbWluIjp0cnVlLCJpYXQiOjE1NTU1NDI0NzIsImV4cCI6MTU1NTgwMTY3Mn0.yfgWjOW9DkOWScXJJ4KcKR8wDNeQplbX1N8ph2b-Pw8";
+  "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6IlJvbmFsZG8gRmVpdG9zYSIsImVtYWlsIjoicm9uYWxkb2ZqY0Bob3RtYWlsLmNvbSIsImFkbWluIjp0cnVlLCJpYXQiOjE1NTU2ODUwMjksImV4cCI6MTU1NTk0NDIyOX0.5-dOrk50zN1DWokzza8GphId2npwTtq1pq6l6l5VEao";
 
 new Vue({
   router,
