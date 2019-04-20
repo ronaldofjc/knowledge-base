@@ -68,7 +68,7 @@ module.exports = app => {
       .select("id", "name", "description")
       .limit(limit)
       .offset(page * limit - limit)
-      .then(articles => res.json({ data: articles, count, limit }))
+      .then(articles => res.json({ listArticles: articles, count, limit }))
       .catch(err => res.status(500).send(err));
   };
 
