@@ -95,7 +95,7 @@ export default {
 
 .menu input {
   color: #ccc;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border: 0;
   outline: 0;
   width: 100%;
@@ -104,7 +104,7 @@ export default {
 
 .tree-filter-empty {
   color: #ccc;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-left: 20px;
 }
 </style>
