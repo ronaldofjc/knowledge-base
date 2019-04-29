@@ -102,6 +102,7 @@ export default {
   background-color: #2460ae;
   color: #fff;
   padding: 5px 15px;
+  cursor: pointer;
 }
 
 .auth-modal a {
