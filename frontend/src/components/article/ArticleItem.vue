@@ -2,8 +2,8 @@
   <div class="article-item">
     <router-link :to="{ name: 'articleById', params: { id: article.id } }">
       <div class="article-item-image d-none d-sm-block">
-        <img v-if="article.imageUrl" :src="article.imageUrl" alt="Article" height="150" width="150">
-        <img v-else src="@/assets/article.png" alt="Article" height="150" width="150">
+        <img v-if="article.imageUrl" :src="article.imageUrl" alt="Article" height="120" width="120">
+        <img v-else src="@/assets/article.png" alt="Article" height="120" width="120">
       </div>
       <div class="article-item-info">
         <h2>{{ article.name }}</h2>
@@ -42,7 +42,7 @@ export default {
 }
 
 .article-item-info h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .article-item-image {

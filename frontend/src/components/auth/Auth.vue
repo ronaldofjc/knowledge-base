@@ -2,7 +2,6 @@
   <div class="auth-content">
     <div class="auth-modal">
       <img src="@/assets/logo.png" alt="Logo" width="200">
-      <hr>
       <div class="auth-title">{{ showSignup ? 'Cadastro' : 'Login' }}</div>
 
       <input type="text" v-if="showSignup" v-model="user.name" placeholder="Nome">
